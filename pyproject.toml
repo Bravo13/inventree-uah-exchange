@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inventree-uah-exchange"
+version = "0.1.0"
+description = "InvenTree currency exchange plugin using National Bank of Ukraine (NBU) rates, including UAH"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Yehor" }]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Bravo13/inventree-uah-exchange"
+
+[project.entry-points."inventree_plugins"]
+UAHExchange = "inventree_uah_exchange.plugin:UAHExchangePlugin"
+
+[tool.setuptools]
+packages = ["inventree_uah_exchange"]
